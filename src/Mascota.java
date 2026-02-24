@@ -12,8 +12,9 @@ public class Mascota {
         this.weight = weight;
         this.vaccinated = false;
     }
-    public void vaccinate(){
+    public String vaccinate(){
         this.vaccinated = true;
+        return "tu mascota ha sido vacunada";
     }
     public String feed(float amount){
         if(amount<0){
@@ -24,8 +25,9 @@ public class Mascota {
         }
 
     }
-    public void birthday(){
+    public String birthday(){
         this.age += 1;
+        return "tu mascota ha cumplido un año";
     }
     public String showInfo() {
         return "Mascota: " +

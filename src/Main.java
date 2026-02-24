@@ -20,10 +20,10 @@ public class Main {
                     exit = true;
                 break;
                 case 4:
-                    m1.birthday();
+                    System.out.println(m1.birthday());
                     break;
                 case 3:
-                    m1.vaccinate();
+                    System.out.println(m1.vaccinate());
                     break;
                 case 2:
                     System.out.println("cuanta comida: ");
