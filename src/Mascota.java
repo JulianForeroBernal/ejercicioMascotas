@@ -12,44 +12,14 @@ public class Mascota {
         this.weight = weight;
         this.vaccinated = false;
     }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getSpecie() {
-        return specie;
-    }
-    public void setSpecie(String specie) {
-        this.specie = specie;
-    }
-    public short getAge() {
-        return age;
-    }
-    public void setAge(byte age) {
-        this.age = age;
-    }
-    public float getWeight() {
-        return weight;
-    }
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
-    public boolean isVaccinated() {
-        return vaccinated;
-    }
-    public void setVaccinated(boolean vaccinated) {
-        this.vaccinated = vaccinated;
-    }
     public void vaccinate(){
         this.vaccinated = true;
     }
-    public String feed(float amout){
-        if(amout<0){
+    public String feed(float amount){
+        if(amount<0){
             return "no puede ser una cantidad negativa";
         }else {
-            this.weight += amout;
+            this.weight += amount;
             return "ha aumentado el peso de tu mascota!";
         }
 
