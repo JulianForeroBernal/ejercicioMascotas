@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("ingrese edad de la mascota: ");
                     byte age = scan.nextByte();
                     System.out.println("ingrese peso de la mascota: ");
-                    float weight = scan.nextFloat();
+                    double weight = scan.nextDouble();
                     scan.nextLine();
                     Mascota m1 = new Mascota(name, specie, age, weight);
                     listaMascota.add(m1);
@@ -75,7 +75,7 @@ public class Main {
                                     break;
                                 case 2:
                                     System.out.println("cuanta comida: ");
-                                    float amount = scan.nextFloat();
+                                    double amount = scan.nextDouble();
                                     System.out.println(selecMascota.feed(amount));
                                     break;
                                 case 1:

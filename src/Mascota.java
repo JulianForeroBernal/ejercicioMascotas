@@ -2,10 +2,10 @@ public class Mascota {
     private String name;
     private String specie;
     private byte age;
-    private float weight;
+    private double weight;
     private boolean vaccinated;
 
-    public Mascota(String name, String specie, byte age, float weight){
+    public Mascota(String name, String specie, byte age, double weight){
         this.name = name;
         this.specie = specie;
         this.age = age;
@@ -16,7 +16,7 @@ public class Mascota {
         this.vaccinated = true;
         return "tu mascota ha sido vacunada";
     }
-    public String feed(float amount){
+    public String feed(double amount){
         if(amount<0){
             return "no puede ser una cantidad negativa";
         }else {
@@ -55,10 +55,10 @@ public class Mascota {
     public void setAge(byte age) {
         this.age = age;
     }
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
     public boolean isVaccinated() {
